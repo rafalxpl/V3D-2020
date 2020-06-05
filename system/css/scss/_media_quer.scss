@@ -1,0 +1,20 @@
+/*najwieksza rozdzielczosc laptopów*/
+@media only screen and (max-width: 1000px) {
+    .language {
+        text-align: left;
+        color: #999;
+        padding: 3px 0;
+        display: block;
+    }
+ }
+
+
+/*średni telefon lub IPad*/
+@media only screen and (max-width: 768px) {
+    .language {
+        text-align: center;
+        color: #999;
+        padding: 3px 0;
+        display: block;
+    }
+ }

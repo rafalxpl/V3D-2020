@@ -1,0 +1,47 @@
+.zolty{
+    color:#fff; font: 13px/18px Arial, Helvetica, sans-serif;}
+    
+    .experience ul li {
+      font-size: 1.05em;
+      line-height: 1.4em;
+      padding-bottom: 10px;
+      padding-left: 22px;
+      text-indent: -22px;
+    }
+    .experience {
+        padding-bottom: 20px;
+        padding-right: 10px;
+    }
+    
+    .experience .current {
+        color: #fff;
+    }
+    .imie {
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        padding: 25px 0 25px 0;
+        display: block;
+    
+    }
+    
+    /** 
+     * ---------------RAFAL START ------------------- */
+    .r-srodek-img{
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    
+    .header__languages__list{
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+    }
+    .header__languages__item{
+        padding-right: .92857em;
+        border-right: 1px solid #131313;
+        -webkit-transition: border-color .35s;
+        transition: border-color .35s;
+    }

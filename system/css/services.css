@@ -1,0 +1,118 @@
+.services-ul{
+  width:100%;
+  list-style-type:none;
+  padding-left:0px;
+}
+
+.services-li{
+  list-style:none;
+  display:inline-block;
+  float:left;
+  width:32%;
+  padding:0% 1% 0% 1%;
+}
+
+.services-li:nth-child(1) {
+  padding-left:0%;
+}
+
+.services-li:nth-child(3n+3) {
+  padding-right:0%;
+}
+
+.services-li:nth-child(4) {
+  padding-left:0%;
+}
+
+@media all and (max-width:1000px) {
+  .services-li {
+    width:49%;
+    padding:10px 1% 10px 1%;
+  }
+  
+  .services-li:nth-child(odd) {
+    margin-left:0%;
+  }
+  
+  .services-li:nth-child(even) {
+    padding-right:0%; 
+  }  
+  
+}
+
+@media all and (max-width:690px) {
+  .services-li {
+    width:100%;
+    margin-left:0%;
+    margin-right:0%;
+  }
+}
+
+/*Standard card style: 3rd-width*/
+.card {
+  position:relative;
+  display:inline-block;
+  width:100%;
+  margin:10px 0% 15px 0%;
+  padding:20px 0px 10px 0px;
+  line-height: 22px;
+
+  height:auto;
+  color:#999;
+  background-color:#151515;
+  font-family:Arial,Helvetica,sans-serif;
+  text-align:center;
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  -o-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  -o-border-radius:6px;
+  border-radius:6px;
+  overflow:hidden;
+  float:left;
+}
+
+div.avatar {
+  position: relative;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ccc;
+  width: 72px;
+  height: 72px;
+  margin-left: -36px;
+  margin: auto;
+  z-index: 9999;
+  margin-top:0px;
+}
+
+img.avatarimage {
+  width:72px;
+  height:72px;
+  -webkit-border-radius:50%;
+  -mox-border-radius:50%;
+  -o-border-radius:50%;
+  border-radius:50%;
+}
+
+p {
+  position:relative;
+  display:block;
+}
+
+p.name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top:20px;
+  padding-bottom:0px;
+}
+
+p.description{
+  text-align:left;
+  padding:0px 15px 20px 15px;
+  font-size:16px;
+  line-height:24px;
+}

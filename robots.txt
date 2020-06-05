@@ -1,0 +1,3 @@
+Sitemap: http://visual3design.com/v3d/sitemap/sitemap.xml
+User-agent: *
+Disallow: /v3d/projects/wtm/

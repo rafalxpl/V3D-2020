@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WebToMed - Design Preview</title>
+    <!-- <link href="assets/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="assets/main.js"></script> -->
+</head>
+
+<body style="margin:0px;padding:0px;background-color: #435465; overflow-x: hidden; position: absolute; width: 100%;">
+    <div id="images">
+    </div>
+    <script type="text/javascript">
+    var stop = false;
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var appendEl = document.getElementById("images");
+        var i = 1;
+
+        do {
+            var imgWrap = document.createElement("div");
+            var imgLabel = document.createElement("h2");
+            var imgEl = document.createElement("img");
+
+            imgWrap.setAttribute("class", "my-img-wrap");
+
+            imgLabel.innerHTML = 'P-' + i;
+            imgLabel.setAttribute("class", "my-img-label");
+
+            imgEl.setAttribute("class", "my-img");
+            imgEl.src = 'p-' + i + '.jpg';
+            imgEl.setAttribute("onerror", "setStop(this)");
+
+            imgWrap.appendChild(imgLabel);
+            imgWrap.appendChild(imgEl);
+
+            appendEl.appendChild(imgWrap);
+            i += 1;
+        } while (i < 100);
+
+    });
+
+    function setStop(el) {
+        console.log("stop: " + stop);
+        el.previousSibling.remove();
+        el.remove();
+    }
+    </script>
+    <style>
+    .my-img-wrap {
+        width: 80%;
+        display: block;
+        margin: 10px auto 50px;
+    }
+    
+    .my-img-label {
+        color: #F0F0F0;
+        text-align: right;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 26px;
+        font-family: sans-serif;
+        font-weight: normal;
+    }
+    
+    .my-img {
+        max-width: 100%;
+        moz-box-shadow: 0 0 5px #272829;
+        webkit-box-shadow: 0 0 5px#272829;
+        box-shadow: 0 0 5px #272829;
+    }
+    </style>
+</body>
+
+</html>
